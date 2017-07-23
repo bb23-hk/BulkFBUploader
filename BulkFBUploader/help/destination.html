@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Upload Destination</title>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/side-menu.css">
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>    <![endif]-->
+  </head>
+  <body> 
+    <script src="js/w3a.js"></script>
+    <div id="layout">
+      <div w3-include-html="sidemenu.html"></div>
+      <div id="main">
+        <div class="header">
+          <div w3-include-html="header.html"></div>
+        </div>
+        <div class="content">
+          <div class="pure-g">
+            <div class="pure-u-1">
+              <h1>Facebook Upload Destination</h1>
+              <p><b>Bulk Photo Uploader</b> could upload photo to (1) a new
+                album on your wall, (2) an existing album, or (3) a new album on
+                your Personal Page. Different destination will have different
+                process.</p>
+              <p>1. <b>New Album</b><br>
+                System default is to create New Album. You need to keep <button
+
+                  class="pure-button">Upload to Personal Page</button> unchecked
+                and <button class="pure-button">New Album</button> checked.
+                Input the album name and description accordingly. Then you could
+                go to next step: <a title="Select Files" href="selectfiles.html"><b>Select
+                    Files</b></a></p>
+              <img alt="" src="img/newalbum0.jpg"><br>
+              <br>
+              <p>2. <b>Existing Album</b><br>
+                Uncheck the <button class="pure-button">New Album</button> and
+                you could see a list of albums on your wall. Click one to
+                select.</p>
+              <img alt="" src="img/newalbum1.jpg"><br>
+              <br>
+              <br>
+              <p>3. <b>New Album on Personal Page</b></p>
+              <p>Check the <button class="pure-button">Upload to Personal Page</button>
+                box to get a list Personal Page. Select the one you want to
+                upload to.</p>
+              <img alt="" src="img/pagenewalbum1.jpg"><br>
+              Then the next step is the same as upload to new album.<br>
+              <br>
+              <p>4. <b>Existing Album on Personal Page</b></p>
+              <p>Check the <button class="pure-button">Upload to Personal Page</button>
+                box to get a list Personal Page. Select the one you want to
+                upload to.</p>
+              <img alt="" src="img/pagenewalbum2.jpg"><br>
+              Then the next step is the same as upload to existing album.<br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/ui.js"></script>
+    <script>
+    	w3.includeHTML();
+    </script>
+  </body>
+</html>

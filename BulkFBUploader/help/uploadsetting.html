@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Setting</title>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/side-menu.css">
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>    <![endif]-->
+    <style>
+      hr {
+        border: 0;
+        clear:both;
+        display:block;
+        width: 99%;               
+        background-color:#010101;
+        height: 1px;
+      }
+    </style>
+  </head>
+  <body> 
+    <script src="js/w3a.js"></script>
+    <div w3-include-html="sidemenu.html"></div>
+    <div id="main">
+      <div class="header">
+        <div w3-include-html="header.html"></div>
+      </div>
+      <div class="content">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-1 pure-u-lg-1-1">
+            <h1>Upload Setting</h1>
+            <div class="l-box">Before the upload process, <b>BulkFBUploader</b>
+              give you several options on this process.<br>
+              To change the setting, click <img class="pure-img-responsive" src="img/ulsetting.png"
+
+                height="18" width="18"> on the main page.<br>
+              <img class="pure-img-responsive" src="img/ulsetting1.jpg"><br><br> </div>
+            <div class="l-box">1. Save the processed picture<br>
+              You could save the upload picture on your local drive before upload them on Facebook.
+              If you want this option, check the option box.<br>
+              <img class="pure-img-responsive" src="img/ulsetting2.jpg"> <br><br>
+            </div>
+            <div class="l-box">2. Select save path<br>
+              If you check the save option, the next step is to specify where you want to save the picture.
+              The picture always overwrite existing file if there is a duplication.<br>
+              <img class="pure-img-responsive" src="img/ulsetting3.jpg"><br><br>
+            </div>
+            <div class="l-box">3. Upload picture to Facebook<br>
+              Normally you want to upload the picture to Facebook by using this program.
+              Therefore, this option should always be check. However, for any reason you prefer not to,
+              you could uncheck this option.<br>
+              <img class="pure-img-responsive" src="img/ulsetting4.jpg"><br>
+              For example, you could check save to local drive and uncheck upload.
+              In that case, your processed picture will be save to a local drive and
+              will not be upload to Facebook.<br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/ui.js"></script>
+    <script>
+    	w3.includeHTML();
+    </script>
+  </body>
+</html>

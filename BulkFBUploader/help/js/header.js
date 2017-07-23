@@ -1,0 +1,1 @@
+document.getElementById('header').innerHTML = '<div class="pure-u-1-5"> <a href="index.html"><img title="Application Icon" alt="Bulk Photo Uploader" src="img/appicon64.PNG" style="width:64px;height:64px;border:0;"></a></div><div class="pure-u-4-5"><h1>Bulk Photo Uploader 1.0 Quick Reference</h1></div> <hr>';

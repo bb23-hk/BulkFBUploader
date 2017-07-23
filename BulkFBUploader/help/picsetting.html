@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Setting</title>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/side-menu.css">
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>    <![endif]-->
+    <style>
+      hr {
+        border: 0;
+        clear:both;
+        display:block;
+        width: 99%;               
+        background-color:#010101;
+        height: 1px;
+      }
+    </style>
+  </head>
+  <body> 
+    <script src="js/w3a.js"></script>
+    <div w3-include-html="sidemenu.html"></div>
+    <div id="main">
+      <div class="header">
+        <div w3-include-html="header.html"></div>
+      </div>
+      <div class="content">
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-1 pure-u-lg-1-1">
+            <h1>Picture Setting</h1>
+            <div class="l-box"><b>BulkFBUploader</b> come with a number of
+              useful photo manipulation options.<br>
+            </div>
+            <div class="l-box">
+              <ol>
+                <li>Resize<br>
+                  In Resize, you have two options. Either set the length of the
+                  long size or the short side of your photo. For example, if
+                  your photo size is 6000x4000 pixel. Resize the long side to
+                  1280 will result to 1280x853 pixel. Reside the short side to
+                  1280 will result to 1920x1280 pixel. Facebook recommend the
+                  long side no more that 2048. <br>
+                  <img class="pure-img-responsive" src="img/picset2.jpg"></li>
+                <li>Canvas<br>
+                  Canvas will give you a picture frame around your photo. To use
+                  this, just input the canvas size by pixel into the size box.
+                  If you set the value to 0, that will disable this function.<br>
+                  <img class="pure-img-responsive" src="img/picset3.jpg"><br>
+                  You could set the frame to different size on the 4 sides if
+                  you want. Normally they are having the same size. In <b>BulkFBUploader</b>,
+                  leave <b>Same Canvas Size</b> check box on check status.<br>
+                  <img class="pure-img-responsive" src="img/picset4.jpg"><br>
+                  The default canvas color is white. If you want to change it,
+                  click on the color box and that brings you the color picker.<br>
+                  <img class="pure-img-responsive" src="img/picset5.jpg"><br>
+                  Click <button class="pure-button">OK</button> after you
+                  select your color. <br>
+                  <img class="pure-img-responsive" src="img/picset6.jpg"><br>
+                </li>
+                <li>Brightness<br>
+                  You could change the brightness of your picture. The range is
+                  -100 to 100. 0 is unchanged. </li>
+                <li>Contrast<br>
+                  You could change the contrast of your picture. The range is
+                  -100 to 100. 0 is unchanged. </li>
+                <li>Sharp<br>
+                  You could change the sharpness of your picture. The range is 0
+                  to 30. 0 is unchanged. </li>
+                <li>Saturation<br>
+                  You could change the sharpness of your picture. The range is
+                  -100 to 100. 0 is unchanged. </li>
+                <li>Picture Message<br>
+                  You could add a message on each picture. For example, you
+                  could add the event name for later reference. Several special
+                  characters are available. To get more detail, please read <a
+
+                    href="specialchar.html">Special Character</a>.<br>
+                </li>
+                <li>Add Overlay Text<br>
+                  You could add overlay text message or picture logo to your
+                  picture if you check this option. Currently, the system
+                  support up to 4 overlay text message/logo. To edit each
+                  overlay message/picture, you need to click the line in the
+                  overlay list box, edit the detail, then click <button class="pure-button">Save
+                    Overlay</button> to save the edited detail. Click <button class="pure-button">Cancel
+                    Overlay</button> will forfeit the change.<br>
+                </li>
+                <li>In Use<br>
+                  If check, this overlay is in use. You could edit all the
+                  overlay detail but leave In Use uncheck. <strong>BulkFBUploader</strong>
+                  will skip this overlay setting.<br>
+                </li>
+                <li>Text Position<br>
+                  The starting position of the overlay. For horizontal, It could
+                  be left, middle, and right. For vertical, it could be top,
+                  middle, and bottom.<br>
+                  <img alt="" src="img/picset7.jpg"><br>
+                </li>
+                <li>Text Orientation<br>
+                  Not in use now.<br>
+                </li>
+                <li>X Offset<br>
+                  This works alone with <strong>Text Position</strong>. A
+                  positive value will shift the horizontal starting point to the
+                  right. A negative value will shift to the left. For example,
+                  if you have a canvas of 24 pixel in size on all side, and you
+                  want to put a logo at the top left corner of the actual
+                  picture, you could set Text Position as Top Left, Canvas size
+                  24, X offset and Y offset both 24.<br>
+                </li>
+                <li>Y Offset<br>
+                  Please see X Offset.<br>
+                </li>
+                <li>Opacity<br>
+                  This set the opacity level of the text message or logo
+                  picture. The value is from 0 to 100.<br>
+                </li>
+                <li>Select Font<br>
+                  Click select font to bring up the font selection dialog.<br>
+                  <img alt="" src="img/picset8.jpg"><br>
+                </li>
+                <li>Image File<br>
+                  Check <strong>This is an Image file</strong> to indicate this
+                  overlay is an image.<br>
+                </li>
+                <li>Text Message<br>
+                  If <strong>This is an Image File</strong> is uncheck, the
+                  text in this box will appear in the picture at Text Position
+                  with X/Y Offset, having the font and opacity setup above.
+                  Several special characters are available. To get more detail,
+                  please read <a href="specialchar.html">Special Character</a>.<br>
+                  <img alt="" src="img/picset9.jpg"><br>
+                  If <strong>This is an Image File</strong> is check, a button
+                  <button class="pure-button">Select Image File</button> will
+                  appear. You could click this button to select an image file as
+                  the overlay logo.<br>
+                  <img alt="" src="img/picset12.jpg"><br>
+                  After you select the image file, the file location and name
+                  will appear on the text message. And you cannot change this
+                  directly. The font setting will not have any effect when you
+                  use a image file.<br>
+                  <img alt="" src="img/picset13.jpg"><br>
+                </li>
+                <li>Cancel Overlay<br>
+                  This will cancel the change you make to this line of overlay
+                  message.<br>
+                </li>
+                <li>Save Overlay<br>
+                  This will save the change you make to this line of overlay
+                  message. Please note that if you click another overlay line
+                  without save, the changes will not be save.<br>
+                </li>
+                <li>Save Default<br>
+                  This will save the current picture setting as system default.
+                  Next time you run <strong>BulkFBUploader</strong>, the system
+                  will load the same value as default.<br>
+                </li>
+                <li>Cancel<br>
+                  This will cancel all the change you make in picture setting.<br>
+                </li>
+                <li>OK<br>
+                  This will save all the change and the system will use them in
+                  this session. However, after you quit the system, all settings
+                  will be gone. If you want to use the current settings as
+                  system default, you need to click the <button class="pure-button">Save
+                    Default</button> button.<br>
+                </li>
+              </ol>
+            </div>
+            <div class="l-box">
+              <h2>Special character in the message box</h2>
+              To understand more on the special character in the message box,
+              please see this page: <a href="specialchar.html">Special
+                Character</a></div>
+          </div>
+        </div>
+      </div>
+      <script src="js/ui.js"></script>
+      <script>
+    	w3.includeHTML();
+    </script> </div>
+  </body>
+</html>

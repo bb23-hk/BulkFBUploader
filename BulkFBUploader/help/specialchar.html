@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Setting Overlay Text Special Characters</title>
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="stylesheet" href="css/side-menu.css">
+    <style>
+      hr {
+        border: 0;
+        clear:both;
+        display:block;
+        width: 99%;               
+        background-color:#010101;
+        height: 1px;
+      }
+    </style>
+  </head>
+  
+  <body> 
+    <script src="js/w3a.js"></script>
+    <div w3-include-html="sidemenu.html"></div>
+    <div id="main">
+      <div class="header">
+        <div w3-include-html="header.html"></div>
+      </div>
+      <div class="content">
+        <div class="pure-g-1">
+          <table class="pure-table pure-table-bordered">
+            <thead>
+              <tr>
+              <th>Character</th>
+              <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+      			  <tr>
+                <td>$D</td>
+                <td>file directory/folder</td>
+			        </tr>
+      			  <tr>
+                <td>$F</td>
+                <td> file name (with extension)</td>
+              </tr>
+              <tr>
+                <td>$N</td>
+                <td> file name (without extension) </td>
+              </tr>
+              <tr>
+                <td>$O</td>
+                <td> file extension </td>
+              </tr>
+              <tr>
+                <td>$U</td>
+                <td>current system date/time</td>
+              </tr>
+              <tr>
+                <td>$t</td>
+                <td>exif date/time</td>
+              </tr>
+              <tr>
+                <td>$i</td>
+                <td>ISO</td>
+              </tr>
+              <tr>
+                <td>$l</td>
+                <td>Focal length</td>
+              </tr>
+              <tr>
+                <td>$s</td>
+                <td>Shutter speed</td>
+              </tr>
+              <tr>
+                <td>$f</td>
+                <td>Aperture/f-stop</td>
+              </tr>
+              <tr>
+                <td>$h</td>
+                <td>Flash (On/Off)</td>
+              </tr>
+              <tr>
+                <td>$c</td>
+                <td>Camera Model</td>
+              </tr>
+              <tr>
+                <td>$$</td>
+                <td> add one '$' character </td>
+              </tr>
+            </tbody>
+          </table>
+       		<br>
+          For example:-
+          <table class="pure-table pure-table-bordered">
+            <tbody>
+              <tr>
+                <td>
+                  $F<br>
+                  Date taken: $t{yyyy-MM-dd HH:mm:ss}<br>
+                  $s,F$f,iso:$i
+                </td>
+                <td>
+            		  DSC_1920.JPG<br>
+                  Date taken: 2017-03-30 14:10:01<br>
+                  1/500,F2.8,iso:800
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Date: $t{ddd MMM dd, yyyy.}<br>
+                  Time: $t{hh:mm tt}
+                </td>
+                <td>
+                  Date: Thu Mar 30, 2017.<br>
+                  Time: 02:10 PM
+                </td>
+              </tr>
+           	</tbody>
+          </table>
+          <br>
+          <table class="pure-table pure-table-bordered">
+				    <thead>
+              <tr>
+                <th>Date/time<br>Format</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>d</td>
+                <td>The day of the month, from 1 through 31.</td>
+              </tr>
+              <tr>
+                <td>dd</td>
+                <td>The day of the month, from 01 through 31.</td>
+              </tr>
+              <tr>
+                <td>ddd</td>
+                <td>The abbreviated name of the day of the week, eg,
+                  Mon.</td>
+              </tr>
+              <tr>
+                <td>dddd</td>
+                <td>The full name of the day of the week, eg,
+                  Monday.</td>
+              </tr>
+              <tr>
+                <td>h</td>
+                <td>The hour, using a 12-hour clock from 1 to 12.</td>
+              </tr>
+              <tr>
+                <td>hh</td>
+                <td>The hour, using a 12-hour clock from 01 to 12.</td>
+              </tr>
+              <tr>
+                <td>tt</td>
+                <td>The AM/PM designator.</td>
+              </tr>
+              <tr>
+                <td>H</td>
+                <td>The hour, using a 24-hour clock from 0 to 23.</td>
+              </tr>
+              <tr>
+                <td>HH</td>
+                <td>The hour, using a 24-hour clock from 00 to 23.</td>
+              </tr>
+              <tr>
+                <td>m</td>
+                <td>The minute, from 0 through 59.</td>
+              </tr>
+              <tr>
+                <td>mm</td>
+                <td>The minute, from 00 through 59.</td>
+              </tr>
+              <tr>
+                <td>M</td>
+                <td>The month, from 1 through 12.</td>
+              </tr>
+              <tr>
+                <td>MM</td>
+                <td>The month, from 01 through 12.</td>
+              </tr>
+              <tr>
+                <td>MMM</td>
+                <td>The abbreviated name of the month, eg, Jan.</td>
+              </tr>
+              <tr>
+                <td>MMMM</td>
+                <td>The full name of the month, eg, January.</td>
+              </tr>
+              <tr>
+                <td>s</td>
+                <td>The second, from 0 through 59.</td>
+              </tr>
+              <tr>
+                <td>ss</td>
+                <td>The second, from 00 through 59.</td>
+              </tr>
+              <tr>
+                <td>y</td>
+                <td>The year, from 0 to 99.</td>
+              </tr>
+              <tr>
+                <td>yy</td>
+                <td>The year, from 00 to 99.</td>
+              </tr>
+              <tr>
+                <td>yyyy</td>
+                <td>The year as a four-digit number.</td>
+              </tr>
+              <tr>
+                <td>g</td>
+                <td>General date/time pattern (short time of your Windows setting).</td>
+              </tr>
+              <tr>
+                <td>G</td>
+                <td>General date/time pattern (long time of your Windows setting).</td>
+              </tr>
+              <tr>
+                <td>:</td>
+                <td>The time separator.</td>
+              </tr>
+              <tr>
+                <td>/</td>
+                <td>The date separator.</td>
+              </tr>
+			      </tbody>
+    			</table>
+        </div>
+      </div>
+    </div>
+    <script src="js/ui.js"></script>
+    <script>
+    	w3.includeHTML();
+    </script>
+  </body>
+</html>

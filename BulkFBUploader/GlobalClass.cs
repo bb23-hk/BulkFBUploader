@@ -18,7 +18,8 @@ namespace BulkFBUploader
         public const int MaxOverlayText = 4;
         public const string DefaultDateTimeFormat = "yyyy-MM-dd HH:mm:ss";
 
-        public static string[] PERMISSIONS = new string[] { "user_about_me", "publish_actions", "user_photos", "manage_pages", "pages_show_list", "publish_pages" };
+        //public static string[] PERMISSIONS = new string[] { "user_about_me", "publish_actions", "user_photos", "manage_pages", "pages_show_list", "publish_pages" };
+        public static string[] PERMISSIONS = new string[] { "publish_actions", "user_photos", "manage_pages", "pages_show_list" };
 
         private static string _FBAccessToken = "";
         public static string FBAccessToken { get => _FBAccessToken; set => _FBAccessToken = value; }

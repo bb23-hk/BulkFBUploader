@@ -109,6 +109,14 @@ namespace BulkFBUploader
             {
                 MessageBox.Show(err.Message, "Error");
             }
+            if (Thread.CurrentThread.CurrentUICulture.ToString().ToUpper() == "EN")
+            {
+                MessageBox.Show("The system will exit automatically. Please login again.", "Info");
+            }
+            else
+            {
+                MessageBox.Show("程式將會自動離開. 請重新啟動程式.", "信息");
+            }
             Application.Exit();
         }
 
@@ -424,7 +432,9 @@ namespace BulkFBUploader
 
             // calculate font dimension
             Image _fakeImage = new Bitmap(1, 1);
+            GraphicsUnit units = GraphicsUnit.Pixel;
             Graphics _graphics = Graphics.FromImage(_fakeImage); // get overlay text size
+            _graphics.PageUnit = units;
             SizeF sSize = _graphics.MeasureString(txt, f);
             Point p = new Point(); // get start coordinate
 
@@ -748,7 +758,10 @@ namespace BulkFBUploader
                                 else
                                 {
                                     Font stringFont = new Font(textLayer.FontFamily, textLayer.FontSize, fs, GraphicsUnit.Pixel);
-                                    Point p = CalcStringPos(GlobalClass.MySetting.OLInfos[ot].Text, GlobalClass.MySetting.OLInfos[ot].Pos, 
+                                    //Point p = CalcStringPos(GlobalClass.MySetting.OLInfos[ot].Text, GlobalClass.MySetting.OLInfos[ot].Pos, 
+                                    //    stringFont, imageFactory.Image.Width, imageFactory.Image.Height,
+                                    //    GlobalClass.MySetting.OLInfos[ot].Xoffset, GlobalClass.MySetting.OLInfos[ot].Yoffset);
+                                    Point p = CalcStringPos(textLayer.Text, GlobalClass.MySetting.OLInfos[ot].Pos,
                                         stringFont, imageFactory.Image.Width, imageFactory.Image.Height,
                                         GlobalClass.MySetting.OLInfos[ot].Xoffset, GlobalClass.MySetting.OLInfos[ot].Yoffset);
                                     textLayer.Position = p;
@@ -902,7 +915,8 @@ namespace BulkFBUploader
             }
             catch (Exception err)
             {
-                MessageBox.Show(err.Message, "Error");
+                //MessageBox.Show(err.Message, "Error");
+                System.Diagnostics.Debug.WriteLine(err.Message);
             }
 
         }
@@ -1114,7 +1128,7 @@ namespace BulkFBUploader
             if (Thread.CurrentThread.CurrentUICulture.ToString().ToUpper() == "EN")
             {
                 Properties.Settings.Default.Language = "zh-Hant";
-                MessageBox.Show("請重新啟動程式!", "信息");
+                MessageBox.Show("程式將會自動離開. 請重新啟動程式.", "信息");
             }
             else
             {
@@ -1122,6 +1136,7 @@ namespace BulkFBUploader
                 MessageBox.Show("Please restart this application!","Message");
             }
             Properties.Settings.Default.Save();
+            Application.Exit();
         }
 
         private void BtnUploadSetting_Click(object sender, EventArgs e)

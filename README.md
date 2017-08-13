@@ -15,3 +15,5 @@ this as an all-in-one uploader.
 
 ## Documentation
 Please read the [wiki](https://github.com/bb23-hk/BulkFBUploader/wiki) for detail information.
+
+Please visit [User Guide](https://bb23-hk.github.io/BulkFBUploader/BulkFBUploader/help/index.html) for detail operation.

@@ -10,7 +10,7 @@ let you perform useful photo manupulation before the upload. You could use
 this as an all-in-one uploader.
 
 ## Release :-
-[1.0.0](https://github.com/bb23-hk/BulkFBUploader/releases/download/1.0.0/BulkFBUploader.zip)
+[1.0.2](https://github.com/bb23-hk/BulkFBUploader/releases/download/1.0.2.0/Release.1.0.2.0.zip)
 - This release support Facebook API beta tester only
 
 ## Documentation

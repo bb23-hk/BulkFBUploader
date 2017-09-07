@@ -18,7 +18,6 @@ namespace BulkFBUploader
         public const int MaxOverlayText = 4;
         public const string DefaultDateTimeFormat = "yyyy-MM-dd HH:mm:ss";
 
-        //public static string[] PERMISSIONS = new string[] { "user_about_me", "publish_actions", "user_photos", "manage_pages", "pages_show_list", "publish_pages" };
         public static string[] PERMISSIONS = new string[] { "publish_actions", "user_photos", "manage_pages", "pages_show_list", "publish_pages" };
 
         private static string _FBAccessToken = "";
@@ -40,6 +39,8 @@ namespace BulkFBUploader
         public static string MyDocPath { get => _MyDocPath; }
         public static string MyDocPathXML { get => _MyDocPath + "\\" + _MyAppName(); }
         public const string XMLFile = "BulkFBUploader.config.XML";
+
+        public const int MaxFileList = 1000; // max number of file in a single upload
 
         public static bool SaveExportJPG = false;   // save the processed file
         public static string ExportJPGPath = "";    // path to save the processed file
@@ -83,6 +84,8 @@ namespace BulkFBUploader
 
         public static void GetSetting()
         {
+            string tmpString = "";
+
             // use XML setting file
             // setup the detail overlay text/picture details
             MySetting.OLInfos = new List<PicSettingOLClass>();
@@ -106,7 +109,7 @@ namespace BulkFBUploader
             }
 
             // copy MySetting to MyEdit
-            string tmpString = SettingToXml(MySetting);
+            tmpString = SettingToXml(MySetting);
             FromXml(tmpString, MyEdit);
         }
 
@@ -114,6 +117,50 @@ namespace BulkFBUploader
         private static void GetSettingFromXML()
         {
             MySetting = XML_Filer.ReadFromXmlFile<PicSettingClass>(GlobalClass.MyDocPathXML + "\\" + GlobalClass.XMLFile);
+
+            if (MySetting == null) // xml not found
+            {
+                // init MySetting to empty
+                MySetting = new PicSettingClass();
+                MySetting.ResizePic = false;
+                MySetting.LongSize = 1280;
+                MySetting.ShortSide = 0;
+                MySetting.SameCanvas = true;
+                MySetting.CanvasLeft = 0;
+                MySetting.CanvasRight = 0;
+                MySetting.CanvasTop = 0;
+                MySetting.CanvasBottom = 0;
+                MySetting.CanvasColor = 0x00E0E0E0; // 0xC0C0C0=grey;
+                MySetting.Brightness = 0;
+                MySetting.Contrast = 0;
+                MySetting.GaussianSharpen = 0;
+                MySetting.HueDegrees = 0;
+                MySetting.HueRotate = false;
+                MySetting.Saturation = 0;
+                MySetting.AddOverlayText = false;
+                MySetting.OLInfos = new List<PicSettingOLClass>();
+                for (int i = 0; i < GlobalClass.MaxOverlayText; i++)
+                {
+                    MySetting.OLInfos.Add(new PicSettingOLClass());
+                    MySetting.OLInfos[i].Index = i;
+                    MySetting.OLInfos[i].InUse = false;
+                    MySetting.OLInfos[i].Pos = "LL";
+                    MySetting.OLInfos[i].Ori = "LR";
+                    MySetting.OLInfos[i].Font = "Arial";
+                    MySetting.OLInfos[i].FontSize = "24";
+                    MySetting.OLInfos[i].FontAttr = "Regular";
+                    MySetting.OLInfos[i].FontColor = "Black";
+                    MySetting.OLInfos[i].FontCharset = "1"; //136=BIG5
+                    MySetting.OLInfos[i].FontUnit = "Point";
+                    MySetting.OLInfos[i].Xoffset = 0;
+                    MySetting.OLInfos[i].Yoffset = 0;
+                    MySetting.OLInfos[i].IsFile = false;
+                    MySetting.OLInfos[i].Opacity = 100;
+                    MySetting.OLInfos[i].Text = "";
+                }
+                MySetting.MessageText = "";
+            }
+
 
             // copy MySetting to MyEdit
             string tmpString = SettingToXml(MySetting);

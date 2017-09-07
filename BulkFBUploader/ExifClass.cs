@@ -14,7 +14,7 @@ namespace BulkFBUploader
         public const Int32 exif_WhiteBalance = 0xa403; //41987
         public const Int32 exif_CameraModel = 0x0110; //272
         public const Int32 exif_FocalLength = 0x920a; //37386
-        public const Int32 exif_MakerNote = 0x927c; //37500
+        //public const Int32 exif_MakerNote = 0x927c; //37500
 
         // the folowing 3 items is for easy data access only, has nothing to do with EXIF
         public static DateTime FileDateTime { get; set; }

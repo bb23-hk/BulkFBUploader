@@ -45,10 +45,6 @@
             this.lblTotalFile = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // folderBrowserDialog1
-            // 
-            resources.ApplyResources(this.folderBrowserDialog1, "folderBrowserDialog1");
-            // 
             // btnSelectFolder
             // 
             resources.ApplyResources(this.btnSelectFolder, "btnSelectFolder");
@@ -63,8 +59,8 @@
             // 
             // lstDirList
             // 
-            resources.ApplyResources(this.lstDirList, "lstDirList");
             this.lstDirList.FormattingEnabled = true;
+            resources.ApplyResources(this.lstDirList, "lstDirList");
             this.lstDirList.Name = "lstDirList";
             this.lstDirList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             // 
@@ -98,10 +94,14 @@
             // 
             // lstFileList
             // 
-            resources.ApplyResources(this.lstFileList, "lstFileList");
+            this.lstFileList.AllowDrop = true;
             this.lstFileList.FormattingEnabled = true;
+            resources.ApplyResources(this.lstFileList, "lstFileList");
             this.lstFileList.Name = "lstFileList";
             this.lstFileList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.lstFileList.DragDrop += new System.Windows.Forms.DragEventHandler(this.lstFileList_DragDrop);
+            this.lstFileList.DragOver += new System.Windows.Forms.DragEventHandler(this.lstFileList_DragOver);
+            this.lstFileList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lstFileList_MouseDown);
             // 
             // btnCancel
             // 
@@ -149,6 +149,7 @@
             this.Controls.Add(this.lstDirList);
             this.Controls.Add(this.txtFolder);
             this.Controls.Add(this.btnSelectFolder);
+            this.MaximizeBox = false;
             this.Name = "FrmFiler";
             this.Load += new System.EventHandler(this.FrmFiler_Load);
             this.ResumeLayout(false);

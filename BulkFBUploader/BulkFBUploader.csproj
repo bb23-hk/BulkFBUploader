@@ -23,8 +23,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>4</ApplicationRevision>
-    <ApplicationVersion>1.0.0.4</ApplicationVersion>
+    <SupportUrl>https://github.com/bb23-hk/BulkFBUploader/wiki</SupportUrl>
+    <ErrorReportUrl>https://github.com/bb23-hk/BulkFBUploader/issues</ErrorReportUrl>
+    <ProductName>BulkFBUploader</ProductName>
+    <PublisherName>Terrence Lee</PublisherName>
+    <SuiteName>BulkFBUploader</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.3.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -176,8 +181,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="BulkFBUploader_1_TemporaryKey.pfx" />
-    <None Include="BulkFBUploader_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -200,11 +203,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\ulsetting.png" />
+    <Content Include="Resources\user.png" />
     <None Include="Resources\ZH.JPG" />
     <None Include="Resources\en.JPG" />
     <Content Include="PictureSettingHelp.html" />
-    <Content Include="Resources\education-folder-icon-23340-16x16.ico" />
-    <Content Include="Resources\appicon256.ico" />
     <Content Include="Resources\appicon64.ico" />
     <None Include="Resources\setting.PNG" />
   </ItemGroup>

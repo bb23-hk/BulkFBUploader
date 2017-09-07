@@ -554,7 +554,6 @@
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
             // 
             // label20
@@ -594,6 +593,7 @@
             this.Controls.Add(this.chkAddOverlayText);
             this.HelpButton = true;
             this.helpProvider1.SetHelpNavigator(this, ((System.Windows.Forms.HelpNavigator)(resources.GetObject("$this.HelpNavigator"))));
+            this.MaximizeBox = false;
             this.Name = "FrmPicSetting";
             this.helpProvider1.SetShowHelp(this, ((bool)(resources.GetObject("$this.ShowHelp"))));
             this.Load += new System.EventHandler(this.FrmPicSetting_Load);

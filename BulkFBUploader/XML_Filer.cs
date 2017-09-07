@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 
 namespace BulkFBUploader
@@ -24,6 +26,10 @@ namespace BulkFBUploader
                 writer = new StreamWriter(filePath, append);
                 serializer.Serialize(writer, objectToWrite);
             }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error writing to setting file.\n" + e.Message, "Error");
+            }
             finally
             {
                 if (writer != null)
@@ -46,6 +52,11 @@ namespace BulkFBUploader
                 var serializer = new XmlSerializer(typeof(T));
                 reader = new StreamReader(filePath);
                 return (T)serializer.Deserialize(reader);
+            }
+            catch (Exception e)
+            {
+                string s = e.Message;
+                return default (T);    
             }
             finally
             {

@@ -72,10 +72,6 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // folderBrowserDialog1
-            // 
-            resources.ApplyResources(this.folderBrowserDialog1, "folderBrowserDialog1");
-            // 
             // FrmUploadOption
             // 
             resources.ApplyResources(this, "$this");
@@ -86,6 +82,8 @@
             this.Controls.Add(this.btnSelectSavePath);
             this.Controls.Add(this.chkSaveFile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmUploadOption";
             this.Load += new System.EventHandler(this.FrmUploadOption_Load);
             this.ResumeLayout(false);

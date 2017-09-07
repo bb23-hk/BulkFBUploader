@@ -9,7 +9,6 @@ namespace BulkFBUploader
 {
     public partial class FrmLogin : Form
     {
-        //private String[] PERMISSIONS = new String[] { "user_about_me", "publish_actions", "user_photos", "manage_pages", "pages_show_list", "publish_pages"};
 
         public FrmLogin()
         {
@@ -39,21 +38,29 @@ namespace BulkFBUploader
             Boolean bSuccess = GlobalClass.FB.TryParseOAuthCallbackUrl(e.Url, out FacebookOAuthResult result);
             if (bSuccess && GlobalClass.FBAccessToken.Equals(""))
             {
-                GlobalClass.FBAccessToken = result.AccessToken;
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-                //btnFBlogin.IsEnabled = false;
+                if (result.AccessToken != null)
+                {
+                    GlobalClass.FBAccessToken = result.AccessToken;
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
+                else
+                {
+                    // login unsuccessfull, display and quit
+                    GlobalClass.FBAccessToken = "";
+                    this.DialogResult = DialogResult.Cancel;
+                    this.Close();
+                }
             }
             else if (!GlobalClass.FBAccessToken.Equals(""))
             {
                 // keep login
-                //btnFBlogin.IsEnabled = false;
+                GlobalClass.FBAccessToken = "";
             }
             else if (!bSuccess)
             {
                 // unsuccessful login
                 GlobalClass.FBAccessToken = "";
-                //btnFBlogin.IsEnabled = true;
             }
 
         }

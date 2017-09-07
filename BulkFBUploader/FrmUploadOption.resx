@@ -117,67 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="chkSaveFile.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
+  <data name="chkSaveFile.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 20</value>
+  </data>
+  <data name="chkSaveFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 16</value>
+  </data>
+  <data name="chkSaveFile.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkSaveFile.Text" xml:space="preserve">
+    <value>Save the processed picture ?</value>
+  </data>
+  <data name="&gt;&gt;chkSaveFile.Name" xml:space="preserve">
+    <value>chkSaveFile</value>
   </data>
   <data name="&gt;&gt;chkSaveFile.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;chkUploadToFB.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;lblFilePath.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lblFilePath.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btnSelectSavePath.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="&gt;&gt;chkSaveFile.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>384, 161</value>
   </data>
   <data name="&gt;&gt;chkSaveFile.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;lblFilePath.ZOrder" xml:space="preserve">
+  <data name="btnSelectSavePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 50</value>
+  </data>
+  <data name="btnSelectSavePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <data name="btnSelectSavePath.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;btnSelectSavePath.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="btnSelectSavePath.Text" xml:space="preserve">
+    <value>Select save path</value>
+  </data>
+  <data name="&gt;&gt;btnSelectSavePath.Name" xml:space="preserve">
+    <value>btnSelectSavePath</value>
   </data>
   <data name="&gt;&gt;btnSelectSavePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="chkSaveFile.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 20</value>
-  </data>
-  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>297, 126</value>
-  </data>
-  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;chkUploadToFB.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnSelectSavePath.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnSelectSavePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 50</value>
+  <data name="&gt;&gt;btnSelectSavePath.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="chkUploadToFB.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblFilePath.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="lblFilePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 90</value>
   </data>
   <data name="lblFilePath.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 12</value>
@@ -185,11 +182,32 @@
   <data name="lblFilePath.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;btnSelectSavePath.Name" xml:space="preserve">
-    <value>btnSelectSavePath</value>
+  <data name="lblFilePath.Text" xml:space="preserve">
+    <value>file path</value>
   </data>
-  <data name="chkSaveFile.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;lblFilePath.Name" xml:space="preserve">
+    <value>lblFilePath</value>
+  </data>
+  <data name="&gt;&gt;lblFilePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblFilePath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblFilePath.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkUploadToFB.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="chkUploadToFB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 120</value>
+  </data>
+  <data name="chkUploadToFB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 16</value>
+  </data>
+  <data name="chkUploadToFB.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="chkUploadToFB.Text" xml:space="preserve">
     <value>Upload picture to Facebook (should always be check)</value>
@@ -197,82 +215,64 @@
   <data name="&gt;&gt;chkUploadToFB.Name" xml:space="preserve">
     <value>chkUploadToFB</value>
   </data>
-  <data name="btnClose.Text" xml:space="preserve">
-    <value>Close</value>
+  <data name="&gt;&gt;chkUploadToFB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnSelectSavePath.Text" xml:space="preserve">
-    <value>Select save path</value>
-  </data>
-  <data name="lblFilePath.Text" xml:space="preserve">
-    <value>file path</value>
-  </data>
-  <data name="&gt;&gt;lblFilePath.Name" xml:space="preserve">
-    <value>lblFilePath</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+  <data name="&gt;&gt;chkUploadToFB.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FrmUploadOption</value>
-  </data>
-  <data name="chkUploadToFB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 16</value>
-  </data>
-  <data name="chkSaveFile.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;chkUploadToFB.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lblFilePath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 90</value>
-  </data>
-  <data name="&gt;&gt;lblFilePath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnSelectSavePath.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="chkSaveFile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 16</value>
-  </data>
-  <data name="chkUploadToFB.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
-    <value>btnClose</value>
-  </data>
-  <data name="&gt;&gt;folderBrowserDialog1.Name" xml:space="preserve">
-    <value>folderBrowserDialog1</value>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 126</value>
   </data>
   <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
-  <data name="&gt;&gt;chkUploadToFB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="chkUploadToFB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 120</value>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
   </data>
-  <data name="btnSelectSavePath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 23</value>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
   </data>
   <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Upload Options</value>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;chkSaveFile.Name" xml:space="preserve">
-    <value>chkSaveFile</value>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="chkSaveFile.Text" xml:space="preserve">
-    <value>Save the processed picture ?</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>384, 161</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Upload Options</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialog1.Name" xml:space="preserve">
+    <value>folderBrowserDialog1</value>
+  </data>
+  <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmUploadOption</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

@@ -92,6 +92,7 @@ namespace BulkFBUploader
             // btnUpload
             // 
             resources.ApplyResources(this.btnUpload, "btnUpload");
+            this.btnUpload.Image = global::BulkFBUploader.Properties.Resources.fbupload;
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.UseVisualStyleBackColor = true;
             this.btnUpload.Click += new System.EventHandler(this.BtnUpload_Click);
@@ -212,6 +213,7 @@ namespace BulkFBUploader
             // 
             resources.ApplyResources(this.pBoxUserInfo, "pBoxUserInfo");
             this.pBoxUserInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pBoxUserInfo.Image = global::BulkFBUploader.Properties.Resources.user;
             this.pBoxUserInfo.Name = "pBoxUserInfo";
             this.pBoxUserInfo.TabStop = false;
             // 
@@ -243,6 +245,7 @@ namespace BulkFBUploader
             this.Controls.Add(this.btnFBLogout);
             this.Controls.Add(this.btnFBLogin);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "frmMain";
             ((System.ComponentModel.ISupportInitialize)(this.pboxLanguage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxUserInfo)).EndInit();

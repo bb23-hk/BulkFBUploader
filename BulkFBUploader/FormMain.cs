@@ -168,6 +168,7 @@ namespace BulkFBUploader
                 listBoxPageList.Items.Clear();
                 listBoxPageList.Visible = false;
             }
+            chkBoxNewAlbum.Checked = true;
         }
 
 

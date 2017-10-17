@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="btnFBLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -175,7 +175,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnFBLogin.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="btnFBLogout.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -205,7 +205,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnFBLogout.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="lblUserInfo.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -235,7 +235,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblUserInfo.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -265,7 +265,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="btnUpload.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -292,7 +292,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnUpload.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="lblAlbumName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -322,7 +322,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblAlbumName.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="txtAlbumName.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 198</value>
@@ -346,7 +346,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtAlbumName.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="lblAlbumDesc.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -376,7 +376,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblAlbumDesc.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="txtAlbumDesc.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 237</value>
@@ -406,7 +406,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtAlbumDesc.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="progressBar1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -430,7 +430,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="lblImageFile.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -460,7 +460,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblImageFile.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="chkBoxNewAlbum.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -493,7 +493,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;chkBoxNewAlbum.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -523,7 +523,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="listBoxAlbum.ItemHeight" type="System.Int32, mscorlib">
     <value>18</value>
@@ -547,49 +547,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxAlbum.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="chkBoxUploadToPage.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chkBoxUploadToPage.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="chkBoxUploadToPage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chkBoxUploadToPage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 58</value>
-  </data>
-  <data name="chkBoxUploadToPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 22</value>
-  </data>
-  <data name="chkBoxUploadToPage.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="chkBoxUploadToPage.Text" xml:space="preserve">
-    <value>Upload to personal page</value>
-  </data>
-  <data name="&gt;&gt;chkBoxUploadToPage.Name" xml:space="preserve">
-    <value>chkBoxUploadToPage</value>
-  </data>
-  <data name="&gt;&gt;chkBoxUploadToPage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chkBoxUploadToPage.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkBoxUploadToPage.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="listBoxPageList.ItemHeight" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
   <data name="listBoxPageList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 58</value>
+    <value>320, 58</value>
   </data>
   <data name="listBoxPageList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>564, 94</value>
+    <value>568, 94</value>
   </data>
   <data name="listBoxPageList.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -604,7 +571,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;listBoxPageList.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btnSelectFiles.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -634,7 +601,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSelectFiles.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="lblTotalFiles.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -664,7 +631,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblTotalFiles.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -694,7 +661,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btnUploadSetting.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -718,7 +685,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnUploadSetting.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="pboxLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -742,7 +709,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pboxLanguage.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="btnPicSetting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -864,7 +831,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnPicSetting.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="BtnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -982,7 +949,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BtnExit.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="pBoxUserInfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1018,7 +985,145 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pBoxUserInfo.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
+  </data>
+  <data name="RBtnGroup.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RBtnGroup.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RBtnGroup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 81</value>
+  </data>
+  <data name="RBtnGroup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 22</value>
+  </data>
+  <data name="RBtnGroup.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="RBtnGroup.Text" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="&gt;&gt;RBtnGroup.Name" xml:space="preserve">
+    <value>RBtnGroup</value>
+  </data>
+  <data name="&gt;&gt;RBtnGroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RBtnGroup.Parent" xml:space="preserve">
+    <value>groupBoxUploadTo</value>
+  </data>
+  <data name="&gt;&gt;RBtnGroup.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RBPage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RBPage.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="RBPage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 53</value>
+  </data>
+  <data name="RBPage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 22</value>
+  </data>
+  <data name="RBPage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="RBPage.Text" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="&gt;&gt;RBPage.Name" xml:space="preserve">
+    <value>RBPage</value>
+  </data>
+  <data name="&gt;&gt;RBPage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RBPage.Parent" xml:space="preserve">
+    <value>groupBoxUploadTo</value>
+  </data>
+  <data name="&gt;&gt;RBPage.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RBtnWall.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RBtnWall.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 26</value>
+  </data>
+  <data name="RBtnWall.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 22</value>
+  </data>
+  <data name="RBtnWall.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RBtnWall.Text" xml:space="preserve">
+    <value>Wall</value>
+  </data>
+  <data name="&gt;&gt;RBtnWall.Name" xml:space="preserve">
+    <value>RBtnWall</value>
+  </data>
+  <data name="&gt;&gt;RBtnWall.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RBtnWall.Parent" xml:space="preserve">
+    <value>groupBoxUploadTo</value>
+  </data>
+  <data name="&gt;&gt;RBtnWall.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBoxUploadTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 45</value>
+  </data>
+  <data name="groupBoxUploadTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 112</value>
+  </data>
+  <data name="groupBoxUploadTo.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="groupBoxUploadTo.Text" xml:space="preserve">
+    <value>Upload to</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUploadTo.Name" xml:space="preserve">
+    <value>groupBoxUploadTo</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUploadTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUploadTo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxUploadTo.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TxtGroupID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>310, 125</value>
+  </data>
+  <data name="TxtGroupID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 27</value>
+  </data>
+  <data name="TxtGroupID.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="TxtGroupID.Text" xml:space="preserve">
+    <value>Group ID</value>
+  </data>
+  <data name="TxtGroupID.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TxtGroupID.Name" xml:space="preserve">
+    <value>TxtGroupID</value>
+  </data>
+  <data name="&gt;&gt;TxtGroupID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TxtGroupID.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TxtGroupID.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

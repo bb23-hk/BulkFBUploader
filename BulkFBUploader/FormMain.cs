@@ -48,8 +48,10 @@ namespace BulkFBUploader
             lblUserInfo.Text = "";
             lblImageFile.Text = "";
             progressBar1.Visible = false;
-            chkBoxUploadToPage.Checked = false;
+            //chkBoxUploadToPage.Checked = false;
+            RBtnWall.Checked = true;
             listBoxPageList.Visible = false;
+            TxtGroupID.Visible = false;
             listBoxAlbum.Visible = false;
             lblTotalFiles.Text = "";
 
@@ -84,8 +86,10 @@ namespace BulkFBUploader
                 btnFBLogin.Enabled = false;
                 btnFBLogout.Enabled = true;
                 btnUpload.Enabled = false;
-                chkBoxUploadToPage.Enabled = true;
-                chkBoxUploadToPage.Checked = false;
+                RBtnWall.Checked = true;
+                groupBoxUploadTo.Enabled = true;
+                //chkBoxUploadToPage.Enabled = true;
+                //chkBoxUploadToPage.Checked = false;
                 chkBoxNewAlbum.Enabled = true;
                 listBoxPageList.Visible = false;
                 listBoxAlbum.Visible = false;
@@ -101,8 +105,10 @@ namespace BulkFBUploader
                 btnFBLogin.Enabled = true;
                 btnFBLogout.Enabled = false;
                 btnUpload.Enabled = false;
-                chkBoxUploadToPage.Enabled = false;
-                chkBoxUploadToPage.Checked = false;
+                RBtnWall.Checked = true;
+                groupBoxUploadTo.Enabled = false;
+                //chkBoxUploadToPage.Enabled = false;
+                //chkBoxUploadToPage.Checked = false;
                 chkBoxNewAlbum.Enabled = false;
                 listBoxPageList.Visible = false;
                 listBoxAlbum.Visible = false;
@@ -155,21 +161,21 @@ namespace BulkFBUploader
         }
 
 
-        private void ChkBoxUploadToPage_CheckStateChanged(object sender, EventArgs e)
-        {
-            if (chkBoxUploadToPage.Checked)
-            {
-                // display listBoxPageList
-                listBoxPageList.Visible = true;
-                GetUserPage();
-            }
-            else
-            {
-                listBoxPageList.Items.Clear();
-                listBoxPageList.Visible = false;
-            }
-            chkBoxNewAlbum.Checked = true;
-        }
+        //private void ChkBoxUploadToPage_CheckStateChanged(object sender, EventArgs e)
+        //{
+        //    if (chkBoxUploadToPage.Checked)
+        //    {
+        //        // display listBoxPageList
+        //        listBoxPageList.Visible = true;
+        //        GetUserPage();
+        //    }
+        //    else
+        //    {
+        //        listBoxPageList.Items.Clear();
+        //        listBoxPageList.Visible = false;
+        //    }
+        //    chkBoxNewAlbum.Checked = true;
+        //}
 
 
         private void GetUserPage()
@@ -229,7 +235,8 @@ namespace BulkFBUploader
                     MessageBox.Show("There is no personal page available, please create a new one.", "Info");
                 else
                     MessageBox.Show("沒有個人專頁,請重新建立", "信息");
-                chkBoxUploadToPage.Checked = false;
+                //chkBoxUploadToPage.Checked = false;
+                RBtnWall.Checked = true;
             }
 
         }
@@ -280,8 +287,9 @@ namespace BulkFBUploader
                             if (albumAfter == "")
                             {
                                 // first round, no after now
-                                if (chkBoxUploadToPage.Checked)
-                                {
+                                //if (chkBoxUploadToPage.Checked)
+                                if (RBPage.Checked)
+                                    {
                                     // page album
                                     string tempItem = listBoxPageList.SelectedItem.ToString();
                                     string tempID = tempItem.Substring(tempItem.LastIndexOf("/") + 1);
@@ -296,7 +304,7 @@ namespace BulkFBUploader
                             else
                             {
                                 // has more album info to retrieve
-                                if (chkBoxUploadToPage.Checked)
+                                if (RBPage.Checked)
                                 {
                                     // page album
                                     string tempItem = listBoxPageList.SelectedItem.ToString();
@@ -586,7 +594,7 @@ namespace BulkFBUploader
 
             // build file list array
             // Process the list of files found in the directory.
-            if (chkBoxUploadToPage.Checked)
+            if (RBPage.Checked)
             {
                 // use page album
                 string myPageItem = listBoxPageList.SelectedItem.ToString();
@@ -608,7 +616,7 @@ namespace BulkFBUploader
                 albumParameters["name"] = txtAlbumName.Text;
                 try
                 {
-                    if (chkBoxUploadToPage.Checked)
+                    if (RBPage.Checked)
                     {
                         // use new album in page
                         string tempItem = listBoxPageList.SelectedItem.ToString();
@@ -634,7 +642,7 @@ namespace BulkFBUploader
             else
             {
                 // use existing album
-                if ((chkBoxUploadToPage.Checked) && (GlobalClass.UploadToFB))
+                if ((RBPage.Checked) && (GlobalClass.UploadToFB))
                 {
                     // use existing page album
                     string tempItem = listBoxAlbum.SelectedItem.ToString();
@@ -864,8 +872,10 @@ namespace BulkFBUploader
                 Size size = new Size(pic1W, pic1H);
                 ISupportedImageFormat format = new JpegFormat { Quality = 95 };
                 ResizeMode rmode = ResizeMode.BoxPad;
+                Point aPoint = new Point(pic1W + GlobalClass.MySetting.CanvasLeft, picH + GlobalClass.MySetting.CanvasTop);
                 Color bgColor = Color.FromArgb(GlobalClass.MySetting.CanvasColor);
-                ResizeLayer resizeLayer = new ResizeLayer(size, rmode, AnchorPosition.Center, true);
+                //ResizeLayer resizeLayer = new ResizeLayer(size, rmode, AnchorPosition.Center, true);
+                ResizeLayer resizeLayer = new ResizeLayer(size, rmode, AnchorPosition.TopLeft, true, null, null, null, aPoint);
 
                 // resize action, photo1 contain the resized image
                 // Load, resize, set the format and quality and save an image.
@@ -1306,6 +1316,53 @@ namespace BulkFBUploader
         private void ListBoxPageList_SelectedIndexChanged(object sender, EventArgs e)
         {
             // force to have new album as default after change personal page
+            chkBoxNewAlbum.Checked = true;
+        }
+
+        private void RBtnGroup_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RBtnGroup.Checked)
+            {
+                listBoxPageList.Visible = false;
+                TxtGroupID.Visible = true;
+                TxtGroupID.Text = "Group ID";
+                TxtGroupID.SelectAll();
+            }
+            else
+            {
+                TxtGroupID.Visible = false;
+            }
+            chkBoxNewAlbum.Checked = true;
+        }
+
+        private void RBtnWall_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RBtnWall.Checked)
+            {
+                TxtGroupID.Visible = false;
+                listBoxPageList.Visible = false;
+            }
+            else
+            {
+                //
+            }
+            chkBoxNewAlbum.Checked = true;
+        }
+
+        private void RBPage_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RBPage.Checked)
+            {
+                // display listBoxPageList
+                TxtGroupID.Visible = false;
+                listBoxPageList.Visible = true;
+                GetUserPage();
+            }
+            else
+            {
+                listBoxPageList.Items.Clear();
+                listBoxPageList.Visible = false;
+            }
             chkBoxNewAlbum.Checked = true;
         }
     }

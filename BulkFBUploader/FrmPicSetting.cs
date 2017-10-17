@@ -587,10 +587,12 @@ namespace BulkFBUploader
             if (chkIsFile.Checked)
             {
                 btnSelectImageFile.Visible = true;
+                txtOverlayText.Enabled = false;
             }
             else
             {
                 btnSelectImageFile.Visible = false;
+                txtOverlayText.Enabled = true;
             }
         }
 

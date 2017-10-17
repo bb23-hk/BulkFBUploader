@@ -46,7 +46,6 @@ namespace BulkFBUploader
             this.chkBoxNewAlbum = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.listBoxAlbum = new System.Windows.Forms.ListBox();
-            this.chkBoxUploadToPage = new System.Windows.Forms.CheckBox();
             this.listBoxPageList = new System.Windows.Forms.ListBox();
             this.btnSelectFiles = new System.Windows.Forms.Button();
             this.lblTotalFiles = new System.Windows.Forms.Label();
@@ -56,8 +55,14 @@ namespace BulkFBUploader
             this.btnPicSetting = new System.Windows.Forms.Button();
             this.BtnExit = new System.Windows.Forms.Button();
             this.pBoxUserInfo = new System.Windows.Forms.PictureBox();
+            this.groupBoxUploadTo = new System.Windows.Forms.GroupBox();
+            this.RBtnGroup = new System.Windows.Forms.RadioButton();
+            this.RBPage = new System.Windows.Forms.RadioButton();
+            this.RBtnWall = new System.Windows.Forms.RadioButton();
+            this.TxtGroupID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pboxLanguage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxUserInfo)).BeginInit();
+            this.groupBoxUploadTo.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -91,10 +96,11 @@ namespace BulkFBUploader
             // 
             // btnUpload
             // 
+            this.btnUpload.BackColor = System.Drawing.SystemColors.ControlLightLight;
             resources.ApplyResources(this.btnUpload, "btnUpload");
             this.btnUpload.Image = global::BulkFBUploader.Properties.Resources.fbupload;
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.UseVisualStyleBackColor = false;
             this.btnUpload.Click += new System.EventHandler(this.BtnUpload_Click);
             // 
             // lblAlbumName
@@ -147,13 +153,6 @@ namespace BulkFBUploader
             this.listBoxAlbum.FormattingEnabled = true;
             resources.ApplyResources(this.listBoxAlbum, "listBoxAlbum");
             this.listBoxAlbum.Name = "listBoxAlbum";
-            // 
-            // chkBoxUploadToPage
-            // 
-            resources.ApplyResources(this.chkBoxUploadToPage, "chkBoxUploadToPage");
-            this.chkBoxUploadToPage.Name = "chkBoxUploadToPage";
-            this.chkBoxUploadToPage.UseVisualStyleBackColor = true;
-            this.chkBoxUploadToPage.CheckedChanged += new System.EventHandler(this.ChkBoxUploadToPage_CheckStateChanged);
             // 
             // listBoxPageList
             // 
@@ -217,9 +216,48 @@ namespace BulkFBUploader
             this.pBoxUserInfo.Name = "pBoxUserInfo";
             this.pBoxUserInfo.TabStop = false;
             // 
+            // groupBoxUploadTo
+            // 
+            this.groupBoxUploadTo.Controls.Add(this.RBtnGroup);
+            this.groupBoxUploadTo.Controls.Add(this.RBPage);
+            this.groupBoxUploadTo.Controls.Add(this.RBtnWall);
+            resources.ApplyResources(this.groupBoxUploadTo, "groupBoxUploadTo");
+            this.groupBoxUploadTo.Name = "groupBoxUploadTo";
+            this.groupBoxUploadTo.TabStop = false;
+            // 
+            // RBtnGroup
+            // 
+            resources.ApplyResources(this.RBtnGroup, "RBtnGroup");
+            this.RBtnGroup.Name = "RBtnGroup";
+            this.RBtnGroup.UseVisualStyleBackColor = true;
+            this.RBtnGroup.CheckedChanged += new System.EventHandler(this.RBtnGroup_CheckedChanged);
+            // 
+            // RBPage
+            // 
+            resources.ApplyResources(this.RBPage, "RBPage");
+            this.RBPage.Name = "RBPage";
+            this.RBPage.UseVisualStyleBackColor = true;
+            this.RBPage.CheckedChanged += new System.EventHandler(this.RBPage_CheckedChanged);
+            // 
+            // RBtnWall
+            // 
+            resources.ApplyResources(this.RBtnWall, "RBtnWall");
+            this.RBtnWall.Checked = true;
+            this.RBtnWall.Name = "RBtnWall";
+            this.RBtnWall.TabStop = true;
+            this.RBtnWall.UseVisualStyleBackColor = true;
+            this.RBtnWall.CheckedChanged += new System.EventHandler(this.RBtnWall_CheckedChanged);
+            // 
+            // TxtGroupID
+            // 
+            resources.ApplyResources(this.TxtGroupID, "TxtGroupID");
+            this.TxtGroupID.Name = "TxtGroupID";
+            // 
             // frmMain
             // 
             resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.TxtGroupID);
+            this.Controls.Add(this.groupBoxUploadTo);
             this.Controls.Add(this.btnUploadSetting);
             this.Controls.Add(this.pboxLanguage);
             this.Controls.Add(this.label3);
@@ -227,7 +265,6 @@ namespace BulkFBUploader
             this.Controls.Add(this.btnSelectFiles);
             this.Controls.Add(this.btnPicSetting);
             this.Controls.Add(this.listBoxPageList);
-            this.Controls.Add(this.chkBoxUploadToPage);
             this.Controls.Add(this.listBoxAlbum);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.chkBoxNewAlbum);
@@ -249,6 +286,8 @@ namespace BulkFBUploader
             this.Name = "frmMain";
             ((System.ComponentModel.ISupportInitialize)(this.pboxLanguage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxUserInfo)).EndInit();
+            this.groupBoxUploadTo.ResumeLayout(false);
+            this.groupBoxUploadTo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,7 +313,6 @@ namespace BulkFBUploader
         private CheckBox chkBoxNewAlbum;
         private Label label5;
         private ListBox listBoxAlbum;
-        private CheckBox chkBoxUploadToPage;
         private ListBox listBoxPageList;
         private Button btnPicSetting;
         private Button btnSelectFiles;
@@ -282,6 +320,11 @@ namespace BulkFBUploader
         private Label label3;
         private PictureBox pboxLanguage;
         private Button btnUploadSetting;
+        private GroupBox groupBoxUploadTo;
+        private RadioButton RBtnGroup;
+        private RadioButton RBPage;
+        private RadioButton RBtnWall;
+        private TextBox TxtGroupID;
     }
 }
 
